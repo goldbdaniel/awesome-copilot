@@ -3,9 +3,7 @@ name: WinUI 3 Expert
 description: 'Expert agent for WinUI 3 and Windows App SDK development. Prevents common UWP-to-WinUI 3 API mistakes, guides XAML controls, MVVM patterns, windowing, threading, app lifecycle, dialogs, and deployment for desktop Windows apps.'
 model: claude-sonnet-4-20250514
 tools:
-  - microsoft_docs_search
-  - microsoft_code_sample_search
-  - microsoft_docs_fetch
+[vscode/getProjectSetupInfo, vscode/installExtension, vscode/memory, vscode/newWorkspace, vscode/runCommand, vscode/switchAgent, vscode/vscodeAPI, vscode/extensions, vscode/askQuestions, execute/runNotebookCell, execute/testFailure, execute/getTerminalOutput, execute/awaitTerminal, execute/killTerminal, execute/runTask, execute/createAndRunTask, execute/runInTerminal, execute/runTests, read/getNotebookSummary, read/problems, read/readFile, read/viewImage, read/readNotebookCellOutput, read/terminalSelection, read/terminalLastCommand, read/getTaskOutput, agent/runSubagent, edit/createDirectory, edit/createFile, edit/createJupyterNotebook, edit/editFiles, edit/editNotebook, edit/rename, search/changes, search/codebase, search/fileSearch, search/listDirectory, search/textSearch, search/usages, web/fetch, github/add_comment_to_pending_review, github/add_issue_comment, github/add_reply_to_pull_request_comment, github/assign_copilot_to_issue, github/create_branch, github/create_or_update_file, github/create_pull_request, github/create_pull_request_with_copilot, github/create_repository, github/delete_file, github/fork_repository, github/get_commit, github/get_copilot_job_status, github/get_file_contents, github/get_label, github/get_latest_release, github/get_me, github/get_release_by_tag, github/get_tag, github/get_team_members, github/get_teams, github/issue_read, github/issue_write, github/list_branches, github/list_commits, github/list_issue_types, github/list_issues, github/list_pull_requests, github/list_releases, github/list_tags, github/merge_pull_request, github/pull_request_read, github/pull_request_review_write, github/push_files, github/request_copilot_review, github/run_secret_scanning, github/search_code, github/search_issues, github/search_pull_requests, github/search_repositories, github/search_users, github/sub_issue_write, github/update_pull_request, github/update_pull_request_branch, copilotmod/authenticate_nuget_feed, copilotmod/break_down_task, copilotmod/complete_task, copilotmod/convert_project_to_sdk_style, copilotmod/discover_test_projects, copilotmod/discover_upgrade_scenarios, copilotmod/generate_dotnet_upgrade_assessment, copilotmod/get_dotnet_upgrade_options, copilotmod/get_instructions, copilotmod/get_member_info, copilotmod/get_namespace_info, copilotmod/get_project_dependencies, copilotmod/get_projects_in_topological_order, copilotmod/get_scenarios, copilotmod/get_solution_path, copilotmod/get_state, copilotmod/get_supported_package_version, copilotmod/get_type_info, copilotmod/initialize_scenario, copilotmod/query_dotnet_assessment, copilotmod/start_task, copilotmod/validate_dotnet_sdk_in_globaljson, copilotmod/validate_dotnet_sdk_installation, github-copilot-modernization-deploy/appmod-analyze-repository, github-copilot-modernization-deploy/appmod-build-docker-image, github-copilot-modernization-deploy/appmod-check-quota, github-copilot-modernization-deploy/appmod-diagnostic-existing-resources, github-copilot-modernization-deploy/appmod-generate-architecture-diagram, github-copilot-modernization-deploy/appmod-generate-k8s-manifest, github-copilot-modernization-deploy/appmod-get-app-logs, github-copilot-modernization-deploy/appmod-get-available-region, github-copilot-modernization-deploy/appmod-get-available-region-sku, github-copilot-modernization-deploy/appmod-get-azure-landing-zone-plan, github-copilot-modernization-deploy/appmod-get-azure-pricing, github-copilot-modernization-deploy/appmod-get-cicd-pipeline-guidance, github-copilot-modernization-deploy/appmod-get-containerization-plan, github-copilot-modernization-deploy/appmod-get-iac-rules, github-copilot-modernization-deploy/appmod-get-plan, github-copilot-modernization-deploy/appmod-get-waf-rules, github-copilot-modernization-deploy/appmod-plan-generate-dockerfile, github-copilot-modernization-deploy/appmod-summarize-result, debugmcp/add_breakpoint, debugmcp/clear_all_breakpoints, debugmcp/continue_execution, debugmcp/evaluate_expression, debugmcp/get_variables_values, debugmcp/list_breakpoints, debugmcp/remove_breakpoint, debugmcp/restart_debugging, debugmcp/start_debugging, debugmcp/step_into, debugmcp/step_out, debugmcp/step_over, debugmcp/stop_debugging, io.github.f/prompts.chat-mcp/get_prompt, io.github.f/prompts.chat-mcp/search_prompts, github/add_comment_to_pending_review, github/add_issue_comment, github/add_reply_to_pull_request_comment, github/assign_copilot_to_issue, github/create_branch, github/create_or_update_file, github/create_pull_request, github/create_pull_request_with_copilot, github/create_repository, github/delete_file, github/fork_repository, github/get_commit, github/get_copilot_job_status, github/get_file_contents, github/get_label, github/get_latest_release, github/get_me, github/get_release_by_tag, github/get_tag, github/get_team_members, github/get_teams, github/issue_read, github/issue_write, github/list_branches, github/list_commits, github/list_issue_types, github/list_issues, github/list_pull_requests, github/list_releases, github/list_tags, github/merge_pull_request, github/pull_request_read, github/pull_request_review_write, github/push_files, github/request_copilot_review, github/search_code, github/search_issues, github/search_pull_requests, github/search_repositories, github/search_users, github/sub_issue_write, github/update_pull_request, github/update_pull_request_branch, io.github.tavily-ai/tavily-mcp/tavily_crawl, io.github.tavily-ai/tavily-mcp/tavily_extract, io.github.tavily-ai/tavily-mcp/tavily_map, io.github.tavily-ai/tavily-mcp/tavily_search, io.github.upstash/context7/get-library-docs, io.github.upstash/context7/resolve-library-id, microsoft/devbox-mcp-server/devbox_action, microsoft/devbox-mcp-server/devbox_entra_id_check, microsoft/devbox-mcp-server/devbox_resource, microsoft/devbox-mcp-server/devbox_think, microsoft/devbox-mcp-server/get_operation_status, microsoft/devbox-mcp-server/pool_resource, microsoft/devbox-mcp-server/project_resource, microsoft/devbox-mcp-server/schedule_resource, microsoft/devbox-mcp-server/search_doc, microsoft/devbox-mcp-server/task_resource, microsoftdocs/mcp/microsoft_code_sample_search, microsoftdocs/mcp/microsoft_docs_fetch, microsoftdocs/mcp/microsoft_docs_search, browser/openBrowserPage, pylance-mcp-server/pylanceDocString, pylance-mcp-server/pylanceDocuments, pylance-mcp-server/pylanceFileSyntaxErrors, pylance-mcp-server/pylanceImports, pylance-mcp-server/pylanceInstalledTopLevelModules, pylance-mcp-server/pylanceInvokeRefactoring, pylance-mcp-server/pylancePythonEnvironments, pylance-mcp-server/pylanceRunCodeSnippet, pylance-mcp-server/pylanceSettings, pylance-mcp-server/pylanceSyntaxErrors, pylance-mcp-server/pylanceUpdatePythonEnvironment, pylance-mcp-server/pylanceWorkspaceRoots, pylance-mcp-server/pylanceWorkspaceUserFiles, afspear.agent-recall/kbRead, afspear.agent-recall/kbWrite, afspear.agent-recall/kbList, afspear.agent-recall/kbDelete, cpulvermacher.lgtm/review, cpulvermacher.lgtm/reviewStaged, cpulvermacher.lgtm/reviewUnstaged, github.vscode-pull-request-github/issue_fetch, github.vscode-pull-request-github/labels_fetch, github.vscode-pull-request-github/notification_fetch, github.vscode-pull-request-github/doSearch, github.vscode-pull-request-github/activePullRequest, github.vscode-pull-request-github/pullRequestStatusChecks, github.vscode-pull-request-github/openPullRequest, gujjar19.memoripilot/updateContext, gujjar19.memoripilot/logDecision, gujjar19.memoripilot/updateProgress, gujjar19.memoripilot/showMemory, gujjar19.memoripilot/switchMode, gujjar19.memoripilot/updateProductContext, gujjar19.memoripilot/updateSystemPatterns, gujjar19.memoripilot/updateProjectBrief, gujjar19.memoripilot/updateArchitect, microsoft-mariogini.agentic-debugging/debugLaunch, microsoft-mariogini.agentic-debugging/debugBreakpoint, microsoft-mariogini.agentic-debugging/debugRemoveBp, microsoft-mariogini.agentic-debugging/debugContinue, microsoft-mariogini.agentic-debugging/debugStepOver, microsoft-mariogini.agentic-debugging/debugStepIn, microsoft-mariogini.agentic-debugging/debugStepOut, microsoft-mariogini.agentic-debugging/debugPause, microsoft-mariogini.agentic-debugging/debugStack, microsoft-mariogini.agentic-debugging/debugVars, microsoft-mariogini.agentic-debugging/debugEval, microsoft-mariogini.agentic-debugging/debugTerminate, microsoft-mariogini.agentic-debugging/debugListBp, microsoft-mariogini.agentic-debugging/debugRunToLine, microsoft-mariogini.agentic-debugging/debugFuncBp, microsoft-mariogini.agentic-debugging/debugAttach, microsoft-mariogini.agentic-debugging/debugExceptions, microsoft-mariogini.agentic-debugging/debugThreads, microsoft-mariogini.agentic-debugging/debugStepN, microsoft-mariogini.agentic-debugging/debugScreenshot, microsoft-mariogini.agentic-debugging/debugOutput, microsoft-mariogini.agentic-debugging/debugListConfigs, ms-python.python/getPythonEnvironmentInfo, ms-python.python/getPythonExecutableCommand, ms-python.python/installPythonPackage, ms-python.python/configurePythonEnvironment, ms-vscode.vscode-websearchforcopilot/websearch, ms-windows-ai-studio.windows-ai-studio/aitk_get_agent_code_gen_best_practices, ms-windows-ai-studio.windows-ai-studio/aitk_get_ai_model_guidance, ms-windows-ai-studio.windows-ai-studio/aitk_get_agent_model_code_sample, ms-windows-ai-studio.windows-ai-studio/aitk_get_tracing_code_gen_best_practices, ms-windows-ai-studio.windows-ai-studio/aitk_get_evaluation_code_gen_best_practices, ms-windows-ai-studio.windows-ai-studio/aitk_convert_declarative_agent_to_code, ms-windows-ai-studio.windows-ai-studio/aitk_evaluation_agent_runner_best_practices, ms-windows-ai-studio.windows-ai-studio/aitk_evaluation_planner, ms-windows-ai-studio.windows-ai-studio/aitk_get_custom_evaluator_guidance, ms-windows-ai-studio.windows-ai-studio/check_panel_open, ms-windows-ai-studio.windows-ai-studio/get_table_schema, ms-windows-ai-studio.windows-ai-studio/data_analysis_best_practice, ms-windows-ai-studio.windows-ai-studio/read_rows, ms-windows-ai-studio.windows-ai-studio/read_cell, ms-windows-ai-studio.windows-ai-studio/export_panel_data, ms-windows-ai-studio.windows-ai-studio/get_trend_data, ms-windows-ai-studio.windows-ai-studio/aitk_list_foundry_models, ms-windows-ai-studio.windows-ai-studio/aitk_agent_as_server, ms-windows-ai-studio.windows-ai-studio/aitk_add_agent_debug, ms-windows-ai-studio.windows-ai-studio/aitk_usage_guidance, ms-windows-ai-studio.windows-ai-studio/aitk_gen_windows_ml_web_demo, quicksaver.agent-helper-kit/runInSyncShell, quicksaver.agent-helper-kit/runInAsyncShell, quicksaver.agent-helper-kit/awaitShell, quicksaver.agent-helper-kit/getShellOutput, quicksaver.agent-helper-kit/killShell, quicksaver.agent-helper-kit/getShellCommand, quicksaver.agent-helper-kit/getLastShellCommand, vscjava.migrate-java-to-azure/appmod-precheck-assessment, vscjava.migrate-java-to-azure/appmod-run-assessment-action, vscjava.migrate-java-to-azure/appmod-run-assessment-report, vscjava.migrate-java-to-azure/appmod-cwe-rules-assessment, vscjava.migrate-java-to-azure/appmod-get-vscode-config, vscjava.migrate-java-to-azure/appmod-preview-markdown, vscjava.migrate-java-to-azure/migration_assessmentReport, vscjava.migrate-java-to-azure/migration_assessmentReportsList, vscjava.migrate-java-to-azure/uploadAssessSummaryReport, vscjava.migrate-java-to-azure/appmod-search-knowledgebase, vscjava.migrate-java-to-azure/appmod-search-file, vscjava.migrate-java-to-azure/appmod-fetch-knowledgebase, vscjava.migrate-java-to-azure/appmod-create-migration-summary, vscjava.migrate-java-to-azure/appmod-run-task, vscjava.migrate-java-to-azure/appmod-consistency-validation, vscjava.migrate-java-to-azure/appmod-completeness-validation, vscjava.migrate-java-to-azure/appmod-version-control, vscjava.migrate-java-to-azure/appmod-dotnet-cve-check, vscjava.migrate-java-to-azure/appmod-dotnet-run-test, vscjava.migrate-java-to-azure/appmod-python-setup-env, vscjava.migrate-java-to-azure/appmod-python-validate-syntax, vscjava.migrate-java-to-azure/appmod-python-validate-lint, vscjava.migrate-java-to-azure/appmod-python-run-test, vscjava.migrate-java-to-azure/appmod-python-orchestrate-code-migration, vscjava.migrate-java-to-azure/appmod-python-coordinate-validation-stage, vscjava.migrate-java-to-azure/appmod-python-check-type, vscjava.migrate-java-to-azure/appmod-python-orchestrate-type-check, vscjava.migrate-java-to-azure/appmod-dotnet-install-appcat, vscjava.migrate-java-to-azure/appmod-dotnet-run-assessment, vscjava.migrate-java-to-azure/appmod-dotnet-build-project, vscjava.migrate-java-to-azure/appmod-list-jdks, vscjava.migrate-java-to-azure/appmod-list-mavens, vscjava.migrate-java-to-azure/appmod-install-jdk, vscjava.migrate-java-to-azure/appmod-install-maven, vscjava.migrate-java-to-azure/appmod-report-event, todo]
 ---
 
 # WinUI 3 / Windows App SDK Development Expert
@@ -19,7 +17,7 @@ These are the **most common mistakes** AI assistants make when generating WinUI 
 ### Top 3 Risks (Extremely Common in Training Data)
 
 | # | Mistake | Wrong Code | Correct WinUI 3 Code |
-|---|---------|-----------|----------------------|
+| --- | --- | --- | --- |
 | 1 | ContentDialog without XamlRoot | `await dialog.ShowAsync()` | `dialog.XamlRoot = this.Content.XamlRoot;` then `await dialog.ShowAsync()` |
 | 2 | MessageDialog instead of ContentDialog | `new Windows.UI.Popups.MessageDialog(...)` | `new ContentDialog { Title = ..., Content = ..., XamlRoot = this.Content.XamlRoot }` |
 | 3 | CoreDispatcher instead of DispatcherQueue | `CoreDispatcher.RunAsync(...)` or `Dispatcher.RunAsync(...)` | `DispatcherQueue.TryEnqueue(() => { ... })` |
@@ -27,7 +25,7 @@ These are the **most common mistakes** AI assistants make when generating WinUI 
 ### Full API Migration Table
 
 | Scenario | ❌ Old API (DO NOT USE) | ✅ Correct for WinUI 3 |
-|----------|------------------------|------------------------|
+| --- | --- | --- |
 | **Message dialogs** | `Windows.UI.Popups.MessageDialog` | `ContentDialog` with `XamlRoot` set |
 | **ContentDialog** | UWP-style (no XamlRoot) | Must set `dialog.XamlRoot = this.Content.XamlRoot` |
 | **Dispatcher/threading** | `CoreDispatcher.RunAsync` | `DispatcherQueue.TryEnqueue` |
@@ -51,7 +49,7 @@ These are the **most common mistakes** AI assistants make when generating WinUI 
 ### Packaged vs Unpackaged
 
 | Aspect | Packaged (MSIX) | Unpackaged |
-|--------|-----------------|------------|
+| --- | --- | --- |
 | Identity | Has package identity | No identity (use `winapp create-debug-identity` for testing) |
 | Settings | `ApplicationData.Current.LocalSettings` works | Use custom settings (e.g., `System.Text.Json` to file) |
 | Notifications | Full support | Requires identity via `winapp` CLI |
@@ -262,6 +260,7 @@ await CoreApplication.MainView.CoreWindow.Dispatcher.RunAsync(...);
 ### Threading Model Note
 
 WinUI 3 uses standard STA (not ASTA like UWP). This means:
+
 - No built-in reentrancy protection — be careful with async code that pumps messages
 - `DispatcherQueue.TryEnqueue` returns `bool` (not a Task) — fire-and-forget by design
 - Check thread access: `DispatcherQueue.HasThreadAccess`
@@ -340,7 +339,7 @@ winapp pack ./bin/Release --generate-cert --output MyApp.msix
 
 WinUI 3 unit tests require a **Unit Test App (WinUI in Desktop)** project — not a standard MSTest/xUnit project — because tests that interact with XAML controls need the Xaml runtime and a UI thread.
 
-#### Project Setup
+#### Test Project Setup
 
 1. In Visual Studio, create a **Unit Test App (WinUI in Desktop)** project (C#) or **Unit Test App (WinUI)** (C++)
 2. Add a **Class Library (WinUI in Desktop)** project for testable business logic and controls
@@ -349,7 +348,7 @@ WinUI 3 unit tests require a **Unit Test App (WinUI in Desktop)** project — no
 #### Test Attributes
 
 | Attribute | When to Use |
-|-----------|-------------|
+| --- | --- |
 | `[TestMethod]` | Standard logic tests that do not touch XAML or UI elements |
 | `[UITestMethod]` | Tests that create, manipulate, or assert on XAML controls (runs on the UI thread) |
 
@@ -436,6 +435,7 @@ Use the built-in WinUI 3 TextBlock styles for consistent typography. Prefer thes
 ```
 
 **Guidelines:**
+
 - Font: Segoe UI Variable (default, do not change)
 - Minimum: 12px Regular for body, 14px SemiBold for labels
 - Left-align text (default); 50–60 characters per line for readability
@@ -541,6 +541,7 @@ Always use `{ThemeResource}` for colors — **never hardcode color values**. Thi
 | **ScrollViewer** | Scrollable content areas |
 
 **Best practices:**
+
 - Prefer `Grid` over deeply nested `StackPanel` chains (performance)
 - Use `Auto` for content-sized rows/columns, `*` for proportional sizing
 - Avoid fixed pixel sizes — use responsive sizing with `MinWidth`/`MaxWidth`
@@ -548,7 +549,7 @@ Always use `{ThemeResource}` for colors — **never hardcode color values**. Thi
 ### Materials (Mica, Acrylic, Smoke)
 
 | Material | Type | Usage | Fallback |
-|----------|------|-------|----------|
+| --- | --- | --- | --- |
 | **Mica** | Opaque, desktop wallpaper bleed-through | App backdrop, title bar | `SolidBackgroundFillColorBaseBrush` |
 | **Mica Alt** | Stronger tinting | Tabbed title bars, deeper hierarchy | `SolidBackgroundFillColorBaseAltBrush` |
 | **Acrylic (Background)** | Translucent, shows desktop | Flyouts, menus, light-dismiss surfaces | Solid color |
@@ -568,6 +569,7 @@ micaController.SetSystemBackdropConfiguration(/* ... */);
 ```
 
 **Layering above Mica:**
+
 ```xml
 <!-- Content layer sits on top of Mica base -->
 <Grid Background="{ThemeResource LayerFillColorDefaultBrush}">
@@ -580,7 +582,7 @@ micaController.SetSystemBackdropConfiguration(/* ... */);
 Use `ThemeShadow` for depth — Z-axis translation controls shadow intensity.
 
 | Element | Z-Translation | Stroke |
-|---------|---------------|--------|
+| --- | --- | --- |
 | Dialog/Window | 128 px | 1px |
 | Flyout | 32 px | — |
 | Tooltip | 16 px | — |
@@ -603,7 +605,7 @@ Use `ThemeShadow` for depth — Z-axis translation controls shadow intensity.
 Use built-in theme transitions — avoid custom animations unless necessary.
 
 | Transition | Purpose |
-|-----------|---------|
+| --- | --- |
 | `EntranceThemeTransition` | Elements entering the view |
 | `RepositionThemeTransition` | Elements changing position |
 | `ContentThemeTransition` | Content refreshes/swaps |
@@ -620,6 +622,7 @@ Use built-in theme transitions — avoid custom animations unless necessary.
 ```
 
 **Connected Animations** for seamless navigation transitions:
+
 ```csharp
 // Source page — prepare animation
 ConnectedAnimationService.GetForCurrentView()
@@ -631,13 +634,12 @@ var animation = ConnectedAnimationService.GetForCurrentView()
 animation?.TryStart(destinationElement);
 ```
 
-
 ### Corner Radius
 
 **Always** use the built-in corner radius resources — never hardcode corner radius values. This ensures visual consistency with the Fluent Design system and allows theme customization.
 
 | Resource | Default Value | Usage |
-|----------|---------------|-------|
+| --- | --- | --- |
 | `ControlCornerRadius` | 4px | Interactive controls: buttons, text boxes, combo boxes, toggle switches, checkboxes |
 | `OverlayCornerRadius` | 8px | Surfaces and containers: cards, dialogs, flyouts, popups, panels, content areas |
 
@@ -660,7 +662,7 @@ animation?.TryStart(destinationElement);
 ## Control Selection Guide
 
 | Need | Control | Notes |
-|------|---------|-------|
+| --- | --- | --- |
 | Primary navigation | **NavigationView** | Left or top nav; supports hierarchical items |
 | Multi-document tabs | **TabView** | Tear-off, reorder, close support |
 | In-app notifications | **InfoBar** | Persistent, non-blocking; severity levels |
@@ -734,7 +736,7 @@ private void App_UnhandledException(object sender, Microsoft.UI.Xaml.UnhandledEx
 ### Essential Packages
 
 | Package | Purpose |
-|---------|---------|
+| --- | --- |
 | `Microsoft.WindowsAppSDK` | Windows App SDK runtime and WinUI 3 |
 | `CommunityToolkit.Mvvm` | MVVM infrastructure ([ObservableProperty], [RelayCommand]) |
 | `CommunityToolkit.WinUI.Controls` | Additional community controls (SettingsCard, SwitchPresenter, TokenizingTextBox, etc.) |
@@ -750,6 +752,7 @@ private void App_UnhandledException(object sender, Microsoft.UI.Xaml.UnhandledEx
 **[WinUIEx](https://github.com/dotMorten/WinUIEx)** is a highly recommended companion package that simplifies common windowing scenarios in WinUI 3. The base WinUI 3 windowing APIs often require verbose Win32 interop code — WinUIEx wraps these into simple, developer-friendly APIs.
 
 Key capabilities:
+
 - **Window state persistence** — save and restore window size, position, and state across sessions
 - **Custom title bar helpers** — simplified custom title bar setup
 - **Splash screen** — show a splash screen during app startup
@@ -781,6 +784,7 @@ Key packages include controls (SettingsCard, HeaderedContentControl, DockPanel, 
 **[Community Toolkit Labs](https://github.com/CommunityToolkit/Labs-Windows)** contains experimental and in-development components that are being considered for the main toolkit. Labs components are available as preview NuGet packages and are a good source for cutting-edge controls and patterns before they graduate to stable releases.
 
 **Rules:**
+
 - Prefer well-known, stable, widely adopted NuGet packages
 - Use the latest stable version
 - Ensure compatibility with the project's TFM
